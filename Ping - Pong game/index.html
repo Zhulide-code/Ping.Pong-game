@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tafeltennis</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <div class="player">
+                <span class="player__name">Roberto</span>
+                <span class="player__score" id="score-p1">0</span>
+                <span class="player__keys">W: Omhoog / S: Omlaag</span>
+            </div>
+            <h1>Tafeltennis 🏓</h1>
+            <div class="player">
+                <span class="player__name">Yulia</span>
+                <span class="player__score" id="score-p2">0</span>
+                <span class="player__keys">↑: Omhoog / ↓: Omlaag</span>
+            </div>
+        </header>
+        <main>
+            <canvas id="game" width="800" height="500"></canvas>
+        </main>
+        <div class="controls">
+            <button id="pause">Pauze</button>
+            <button id="resume">Hervatten</button>
+            <button id="reset">Herstarten</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
